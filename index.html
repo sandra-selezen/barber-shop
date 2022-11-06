@@ -5,16 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BarberShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header>
         <a href="./index.html"><img src="./images/logo.svg" alt="Logo"></a>
         <nav>
             <ul>
-                <li><a href="">About</a></li>
-                <li><a href="">Services and prices</a></li>
-                <li><a href="">Barbers</a></li>
-                <li><a href="">Contacts</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services and prices</a></li>
+                <li><a href="#barbers">Barbers</a></li>
+                <li><a href="#contacts">Contacts</a></li>
             </ul>
         </nav>
         <a href="tel:+380441111111">+38 044 111 11 11</a>
@@ -27,12 +33,12 @@
             <p>We are experts in trendy men’s haircuts.
             We work quickly, carefully and with style.</p>
             <ul>
-                <li><a href="" rel="noopener noreferrer nofollow">Instagram</a></li>
-                <li><a href="" rel="noopener noreferrer nofollow">Youtube</a></li>
+                <li><a href="https://www.instagram.com/" rel="noopener noreferrer nofollow" target="_blank">Instagram</a></li>
+                <li><a href="https://www.youtube.com/" rel="noopener noreferrer nofollow" target="_blank">Youtube</a></li>
             </ul>
         </section>
 
-        <section>
+        <section id="about">
             <ul>
                 <li><img src="./images/img-1.jpg" alt=""></li>
                 <li><img src="./images/img-2.jpg" alt=""></li>
@@ -46,7 +52,142 @@
             Therefore, we are always ready to improve everyone who comes to us!</p>
             <button>Online-booking</button>
         </section>
+
+        <section id="services">
+            <p>Spend your time with the best masters</p>
+            <h2>Services and prices</h2>
+            <ul>
+                <li>
+                    <p>Men’s haircut</p>
+                    <p>from 300 uah.</p>
+                </li>
+                <li>
+                    <p>Beard trim</p>
+                    <p>from 300 uah.</p>
+                </li>
+                <li>
+                    <p>Mustache trim</p>
+                    <p>from 200 uah.</p>
+                </li>
+                <li>
+                    <p>Straight razor shave</p>
+                    <p>from 200 uah.</p>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <p>Trainee’s haircut</p>
+                    <p>from 50 uah.</p>
+                </li>
+                <li>
+                    <p>Haircut under the nozzle</p>
+                    <p>Haircut under the nozzle</p>
+                </li>
+                <li>
+                    <p>Haircut under the nozzle</p>
+                    <p>from 300 uah.</p>
+                </li>
+                <li>
+                    <p>Camouflage of gray hair</p>
+                    <p>from 200 uah.</p>
+                </li>
+            </ul>
+
+            <button type="button">Online-booking</button>
+        </section>
+
+        <section>
+            <ul>
+                <li>
+                    <span>600</span><sup>+</sup>
+                    <p>Satisfied customers per day</p>
+                </li>
+                <li>
+                    <span>50</span><sup>+</sup>
+                    <p>Awards for excellent service</p>
+                </li>
+                <li>
+                    <span>20</span><sup>+</sup>
+                    <p>Kyiv’s best barbers</p>
+                </li>
+                <li>
+                    <span>100</span><sup>+</sup>
+                    <p>Gifts for regular customers</p>
+                </li>
+            </ul>
+
+            <p>Old traditional school</p>
+            <h2>¿Why people come to us?</h2>
+            <p>Only good things are said about us. But it's better to see and feel 1 time than read 10 times.</p>
+        </section>
+
+        <section id="barbers">
+            <p>For true enjoyers of the atmosphere</p>
+            <h2>Our barbers</h2>
+            <ul>
+                <li>
+                    <img src="./images/img-3.jpg" alt="Barber" width="370" height="346">
+                    <h3>John Smith</h3>
+                    <p>Extreme Barber</p>
+                </li>
+                <li>
+                    <img src="./images/img-4.jpg" alt="Barber" width="370" height="346">
+                    <h3>Michele Doe</h3>
+                    <p>Extreme Barber</p>
+                </li>
+                <li>
+                    <img src="./images/img-5.jpg" alt="Barber" width="370" height="346">
+                    <h3>Alan Black</h3>
+                    <p>Extreme Barber</p>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <p>In Latin, "barba" means "beard"</p>
+            <ul>
+                <li><img src="./images/img-6.jpg" alt="" width="270" height="360"></li>
+                <li><img src="./images/img-7.jpg" alt="" width="270" height="360"></li>
+                <li><img src="./images/img-8.jpg" alt="" width="270" height="360"></li>
+                <li><img src="./images/img-9.jpg" alt="" width="270" height="360"></li>
+            </ul>
+        </section>
+
+        <section id="contacts">
+            <h2>Online-booking</h2>
+            
+            <form action="">
+                <label for="">Name<sup>*</sup>
+                    <input type="text">
+                </label>
+                <label for="">Phone<sup>*</sup>
+                    <input type="tel" name="" id="">
+                </label>
+                <label for="">Message
+                    <textarea name="" id="" rows="5" placeholder="Type your message here..."></textarea>
+                </label>
+                <button type="submit">send</button>
+            </form>
+
+            <h2>Contacts</h2>
+            <address>
+                <ul>
+                    <li><a href="https://goo.gl/maps/Q2aC9YH2SGYtDk5k6" rel="noopener noreferrer nofollow" target="_blank">st. Vasylkivska, 7 Kyiv, 02000</a></li>
+                    <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
+                    <li><a href="mailto:barbershop@email.com">barbershop@email.com</a></li>
+                </ul>
+            </address>
+            <p>Working hours</p>
+            <p>Every day from 9:00 to 22:00</p>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p>&copy; Copyright 2020</p>
+        <ul>
+            <li><a href="https://www.instagram.com/" rel="noopener noreferrer nofollow" target="_blank">Instagram</a></li>
+            <li><a href="https://www.youtube.com/" rel="noopener noreferrer nofollow" target="_blank">Youtube</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
