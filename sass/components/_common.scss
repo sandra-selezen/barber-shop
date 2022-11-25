@@ -1,0 +1,36 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 1.36;
+    color: $primaryTextColor;
+}
+
+.button {
+    padding: 12px 20px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    border: 1px solid $accentColor;
+    border-radius: 25px;
+    color: $whiteColor;
+    background-color: transparent;
+    transition: background-color $duration $timingFunction;
+
+    &:hover,
+    &:focus {
+        background-color: $accentColor;
+    }
+}
+
+.button--black-theme {
+    color: $primaryTextColor;
+    transition: color $duration $timingFunction;
+
+    &:hover,
+    &:focus {
+        color: $whiteColor;
+    }
+}

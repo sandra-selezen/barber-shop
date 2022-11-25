@@ -27,4 +27,251 @@ ul {
 
 address {
   font-style: normal;
+}
+
+button {
+  cursor: pointer;
+}
+
+.section {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1.36;
+  color: #303030;
+}
+
+.button {
+  padding: 12px 20px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  border: 1px solid #FF6C00;
+  border-radius: 25px;
+  color: #FFFFFF;
+  background-color: transparent;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button:hover, .button:focus {
+  background-color: #FF6C00;
+}
+
+.button--black-theme {
+  color: #303030;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button--black-theme:hover, .button--black-theme:focus {
+  color: #FFFFFF;
+}
+
+.about {
+  background-color: #FFFFFF;
+}
+
+.about__subtitle {
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.about__title {
+  margin-bottom: 20px;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+}
+
+.about__description {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+.about__text {
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+}
+
+.services {
+  background-color: #111319;
+  background-image: url("..//../images/prices-mobile-1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .services {
+    background-image: url("..//../images/prices-mobile-2x.png");
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .services {
+    background-image: url("..//../images/prices-tablet-1x.png");
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .services {
+    background-image: url("..//../images/prices-tablet-2x.png");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .services {
+    background-image: url("..//../images/prices-desktop-1x.png");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .services {
+    background-image: url("..//../images/prices-desktop-2x.png");
+  }
+}
+.services__subtitle {
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.services__title {
+  margin-bottom: 44px;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+
+.benefits {
+  background-color: #FFFFFF;
+}
+
+.benefits__subtitle {
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.benefits__title {
+  margin-bottom: 20px;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+.benefits__description {
+  margin-bottom: 44px;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+.benefits__number {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  letter-spacing: 0.05em;
+}
+
+.benefits__text {
+  font-weight: 600;
+}
+
+.team {
+  background-color: #F7F7F7;
+}
+
+.team__subtitle {
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.team__title {
+  margin-bottom: 44px;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+.team__name {
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.team__position {
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.gallery {
+  background-color: #FFFFFF;
+}
+
+.gallery__subtitle {
+  margin-bottom: 71px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.booking {
+  background-color: #191C26;
+}
+
+.booking__title {
+  margin-bottom: 44px;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #FFFFFF;
 }/*# sourceMappingURL=main.css.map */

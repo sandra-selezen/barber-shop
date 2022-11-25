@@ -1,0 +1,33 @@
+.team {
+    background-color: $sectionBgColor;
+}
+
+.team__subtitle {
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.team__title {
+    margin-bottom: 44px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+}
+
+.team__name {
+    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 1.39;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.team__position {
+    font-size: 14px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
