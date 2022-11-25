@@ -138,18 +138,37 @@
                 <p class="team__subtitle">For true enjoyers of the atmosphere</p>
                 <h2 class="team__title">Our barbers</h2>
                 <ul class="team__list">
-                    <li>
-                        <img src="" alt="Barber">
+                    <li class="team__item">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/team-desktop-1-1x.jpg 1x, ./images/team-desktop-1-2x.jpg 2x">
+                            <source media="(min-width: 768px)"
+                                srcset="./images/team-tablet-1-1x.jpg 1x, ./images/team-tablet-1-2x.jpg 2x">
+                            <source media="(max-width: 767px)"
+                                srcset="./images/team-mobile-1-1x.jpg 1x, ./images/team-mobile-1-2x.jpg 2x">
+                            <img class="team__image" src="./images/team-mobile-1-1x.jpg" alt="Barber" width="418" height="346"
+                                loading="lazy">
+                        </picture>
                         <h3 class="team__name">John Smith</h3>
                         <p class="team__position">Extreme Barber</p>
                     </li>
-                    <li>
-                        <img src="" alt="Barber">
+                    <li class="team__item">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/team-desktop-2-1x.jpg 1x, ./images/team-desktop-2-2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="./images/team-tablet-2-1x.jpg 1x, ./images/team-tablet-2-2x.jpg 2x">
+                            <source media="(max-width: 767px)" srcset="./images/team-mobile-2-1x.jpg 1x, ./images/team-mobile-2-2x.jpg 2x">
+                            <img class="team__image" src="./images/team-mobile-2-1x.jpg" alt="Barber" width="418" height="346" loading="lazy">
+                        </picture>
                         <h3 class="team__name">Michele Doe</h3>
                         <p class="team__position">Extreme Barber</p>
                     </li>
-                    <li>
-                        <img src="" alt="Barber">
+                    <li class="team__item">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/team-desktop-3-1x.jpg 1x, ./images/team-desktop-3-2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="./images/team-tablet-3-1x.jpg 1x, ./images/team-tablet-3-2x.jpg 2x">
+                            <source media="(max-width: 767px)" srcset="./images/team-mobile-3-1x.jpg 1x, ./images/team-mobile-3-2x.jpg 2x">
+                            <img class="team__image" src="./images/team-mobile-3-1x.jpg" alt="Barber" width="418" height="346" loading="lazy">
+                        </picture>
                         <h3 class="team__name">Alan Black</h3>
                         <p class="team__position">Extreme Barber</p>
                     </li>
@@ -160,12 +179,40 @@
         <section class="section gallery">
             <div class="container">
                 <p class="gallery__subtitle">In Latin, "barba" means "beard"</p>
-                <h2 class="hidden">Our gallery</h2>
+                <h2 class="gallery__title gallery__title--hidden">Our gallery</h2>
                 <ul class="gallery__list">
-                    <li class="gallery__item"><img src="" alt="Barber"></li>
-                    <li class="gallery__item"><img src="" alt="Barber"></li>
-                    <li class="gallery__item"><img src="" alt="Barber"></li>
-                    <li class="gallery__item"><img src="" alt="Barber"></li>
+                    <li class="gallery__item">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/gallery-desktop-1-1x.jpg 1x, ./images/gallery-desktop-1-2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="./images/gallery-tablet-1-1x.jpg 1x, ./images/gallery-tablet-1-2x.jpg 2x">
+                            <source media="(max-width: 767px)" srcset="./images/gallery-mobile-1-1x.jpg 1x, ./images/gallery-mobile-1-2x.jpg 2x">
+                            <img class="gallery__image" src="./images/gallery-mobile-1-1x.jpg" alt="Barber" width="418" height="360" loading="lazy">
+                        </picture>
+                    </li>
+                    <li class="gallery__item">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/gallery-desktop-2-1x.jpg 1x, ./images/gallery-desktop-2-2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="./images/gallery-tablet-2-1x.jpg 1x, ./images/gallery-tablet-2-2x.jpg 2x">
+                            <source media="(max-width: 767px)" srcset="./images/team-mobile-2-1x.jpg 1x, ./images/team-mobile-2-2x.jpg 2x">
+                            <img class="gallery__image" src="./images/gallery-mobile-2-1x.jpg" alt="Barber" width="418" height="360" loading="lazy">
+                        </picture>
+                    </li>
+                    <li class="gallery__item">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/gallery-desktop-3-1x.jpg 1x, ./images/gallery-desktop-3-2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="./images/gallery-tablet-3-1x.jpg 1x, ./images/gallery-tablet-3-2x.jpg 2x">
+                            <source media="(max-width: 767px)" srcset="./images/gallery-mobile-3-1x.jpg 1x, ./images/gallery-mobile-3-2x.jpg 2x">
+                            <img class="gallery__image" src="./images/gallery-mobile-3-1x.jpg" alt="Barber" width="418" height="360" loading="lazy">
+                        </picture>
+                    </li>
+                    <li class="gallery__item">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/gallery-desktop-4-1x.jpg 1x, ./images/gallery-desktop-4-2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="./images/gallery-tablet-4-1x.jpg 1x, ./images/gallery-tablet-4-2x.jpg 2x">
+                            <source media="(max-width: 767px)" srcset="./images/gallery-mobile-4-1x.jpg 1x, ./images/gallery-mobile-4-2x.jpg 2x">
+                            <img class="gallery__image" src="./images/gallery-mobile-4-1x.jpg" alt="Barber" width="418" height="360" loading="lazy">
+                        </picture>
+                    </li>
                 </ul>
             </div>
         </section>

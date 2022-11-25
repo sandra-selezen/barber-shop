@@ -26,8 +26,40 @@
 }
 
 .team__position {
+    margin-bottom: 30px;
     font-size: 14px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.02em;
+    color: $accentColor;
+}
+
+.team__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.team__item {
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 60px) / 3);
+    }
+}
+
+.team__image {
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    .team__image {
+        width: 450px;
+        height: 346px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .team__image {
+        width: 370px;
+        height: 346px;
+    }
 }
