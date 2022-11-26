@@ -40,6 +40,17 @@
         }
 }
 
+.services__container {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        max-width: 418px;
+    }
+}
+
+.services__container .button {
+    margin: 0 auto;
+    display: block;
+}
+
 .services__subtitle {
     margin-bottom: 20px;
     font-weight: 600;
@@ -55,4 +66,67 @@
     line-height: 1.18;
     letter-spacing: 0.05em;
     color: $whiteColor;
+}
+
+.services__wrap {
+    margin-bottom: 44px;
+
+    @media screen and (max-width: 767px) {
+        padding: 30px 20px 30px 40px;
+        background-image: $servicesFirstGradient;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding: 32px 27px 32px 40px;
+        background-image: $servicesFirstGradient;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        gap: 30px;
+    }
+}
+
+.services__list {
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 30px) / 2);
+        padding: 30px 22px 30px 20px;
+    }
+}
+
+.services__list--light-theme {
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-image: $servicesFirstGradient;
+    }
+}
+
+.services__list--dark-theme {
+    @media screen and (min-width: 1200px) {
+        background-image: $servicesSecondGradient;
+    }
+}
+
+.services__item {
+    display: flex;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+.services__text {
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 0.02em;
+    color: $additionalTextColor;
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+        line-height: 1.67;
+    }
 }

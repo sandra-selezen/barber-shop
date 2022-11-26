@@ -2,6 +2,12 @@
     background-color: $whiteColor;
 }
 
+.gallery__container {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        max-width: 418px;
+    }
+}
+
 .gallery__title--hidden {
     position: absolute;
     width: 1px;

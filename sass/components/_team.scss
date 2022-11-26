@@ -2,6 +2,12 @@
     background-color: $sectionBgColor;
 }
 
+.team__container {
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+        max-width: 450px;
+    }
+}
+
 .team__subtitle {
     margin-bottom: 20px;
     font-weight: 600;
@@ -37,7 +43,12 @@
 .team__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 64px;
+    justify-content: center;
+    
+    @media screen and (min-width: 1200px) {
+        gap: 30px;
+    }
 }
 
 .team__item {
