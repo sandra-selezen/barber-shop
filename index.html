@@ -15,7 +15,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container header__container">
             <a class="logo" href="./index.html"><img src="./images/logo.svg" alt="Logo"></a>
             <nav class="navigation">
                 <ul class="navigation__list">
@@ -25,39 +25,58 @@
                     <li class="navigation__item"><a href="#contacts" class="navigation__link">Contacts</a></li>
                 </ul>
             </nav>
-            <a class="header__phone" href="tel:+380441111111">+38 044 111 11 11</a>
-            <button class="button" type="button" id="booking">Online-booking</button>
+            <div class="header__wrap">
+                <button class="button" type="button" id="booking">Online-booking</button>
+                <a class="header__phone" href="tel:+380441111111">+38 044 111 11 11</a>
+            </div>
         </div>
     </header>
     <main>
-        <section class="section hero">
-            <div class="container">
-                <p class="hero__subtitle">A hair salon for men in Kyiv</p>
-                <h1 class="hero__title">BarberShop</h1>
-                <p class="hero__description">We are experts in trendy men’s haircuts.
-                    We work quickly, carefully and with style.</p>
+        <section class="hero">
+            <div class="container hero__container">
                 <ul class="hero__list">
-                    <li class="hero__item"><a class="hero__link" href="https://www.instagram.com/" rel="noopener noreferrer nofollow" target="_blank">Instagram</a></li>
-                    <li class="hero__item"><a class="hero__link" href="https://www.youtube.com/" rel="noopener noreferrer nofollow" target="_blank">Youtube</a></li>
+                    <li class="hero__item"><a class="hero__link" href="https://www.instagram.com/" rel="noopener noreferrer nofollow"
+                            target="_blank">Instagram</a></li>
+                    <li class="hero__item"><a class="hero__link" href="https://www.youtube.com/" rel="noopener noreferrer nofollow"
+                            target="_blank">Youtube</a></li>
                 </ul>
+                <div class="hero__wrap">
+                    <p class="hero__subtitle">A hair salon for men in Kyiv</p>
+                    <h1 class="hero__title">BarberShop</h1>
+                    <p class="hero__description">We are experts in trendy men’s haircuts.
+                        We work quickly, carefully and with style.</p>
+                </div>
             </div>
         </section>
 
         <section class="section about" id="about">
-            <div class="container">
-                <ul>
-                    <li><img src="" alt="Barber"></li>
-                    <li><img src="" alt="Barber"></li>
+            <div class="container about__container">
+                <ul class="about__list">
+                    <li class="about__item">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/about-desktop-1-1x.jpg 1x, ./images/about-desktop-1-2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="./images/about-tablet-1-1x.jpg 1x, ./images/about-tablet-1-2x.jpg 2x">
+                            <img class="about__image" src="./images/about-tablet-1-1x.jpg" alt="Barber" width="330" height="235" loading="lazy">
+                        </picture>
+                    </li>
+                    <li class="about__item">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/about-desktop-2-1x.jpg 1x, ./images/about-desktop-2-2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="./images/about-tablet-2-1x.jpg 1x, ./images/about-tablet-2-2x.jpg 2x">
+                            <img class="about__image" src="./images/about-tablet-2-1x.jpg" alt="Barber" width="330" height="235" loading="lazy">
+                        </picture>
+                    </li>
                 </ul>
                 
-                <p class="about__subtitle">About</p>
-                <h2 class="about__title">Best Barbershop in your city</h2>
-                <p class="about__description">If you want to add more confidence to your image, you should definitely visit us.</p>
-                <p class="about__text">We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the
-                    hands
-                    of our master, you will never be the same again. We are a team that is always "on the same wave" with clients.
-                    Therefore, we are always ready to improve everyone who comes to us!</p>
-                <button class="button button--black-theme" type="button">Online-booking</button>
+                <div class="about__wrap">
+                    <p class="about__subtitle">About</p>
+                    <h2 class="about__title">Best Barbershop in your city</h2>
+                    <p class="about__description">If you want to add more confidence to your image, you should definitely visit us.</p>
+                    <p class="about__text">We are a team that never stops at what has been achieved and are thirsty for changes. And when
+                        you fall into the hands of our master, you will never be the same again. We are a team that is always "on the same wave" with clients.
+                        Therefore, we are always ready to improve everyone who comes to us!</p>
+                    <button class="button button--black-theme" type="button">Online-booking</button>
+                </div>
             </div>
         </section>
 
