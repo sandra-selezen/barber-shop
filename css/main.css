@@ -303,7 +303,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
-  outline: 1px solid forestgreen;
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .about__container {
