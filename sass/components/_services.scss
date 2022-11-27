@@ -113,10 +113,19 @@
 .services__item {
     display: flex;
     justify-content: space-between;
+    gap: 12px;
+    align-items: baseline;
 
     &:not(:last-child) {
         margin-bottom: 20px;
     }
+}
+
+.services__item::after {
+    content: '';
+    flex-grow: 1;
+    height: 1px;
+    background-color: $lineColor;
 }
 
 .services__text {
@@ -129,4 +138,8 @@
         font-size: 18px;
         line-height: 1.67;
     }
+}
+
+.services__text:last-child {
+    order: 1;
 }

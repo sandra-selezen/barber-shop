@@ -36,6 +36,29 @@ body {
     }
 }
 
+.hero__subtitle,
+.about__subtitle,
+.services__subtitle,
+.benefits__subtitle,
+.team__subtitle,
+.gallery__subtitle {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.hero__subtitle::before,
+.about__subtitle::before,
+.services__subtitle::before,
+.benefits__subtitle::before,
+.team__subtitle::before,
+.gallery__subtitle::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+}
+
 .social {
     display: flex;
     gap: 10px;
