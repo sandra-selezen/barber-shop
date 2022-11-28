@@ -6,17 +6,44 @@
 .header__container {
     display: flex;
     align-items: center;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 32px;
+    }
 }
 
 .logo {
-    margin-top: 40px;
-    margin-right: 50px;
-    margin-bottom: 40px;
+    @media screen and (max-width: 767px) {
+        margin-top: 40px;
+        margin-left: 15px;
+    }
 
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-right: 50px;
+    }
     @media screen and (min-width: 1200px) {
-        margin-top: 32px;
         margin-right: 131px;
         margin-bottom: 32px;
+    }
+}
+
+.logo-icon {
+    width: 68px;
+    height: 55px;
+    fill: $whiteColor;
+
+    @media screen and (min-width: 768px) {
+        fill: $primaryTextColor;
+    }
+}
+
+.navigation {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-left: 20px;
     }
 }
 
@@ -24,10 +51,6 @@
     display: flex;
     flex-wrap: nowrap;
     gap: 16px;
-
-    @media screen and (max-width: 480px) {
-        display: none;
-    }
 
     @media screen and (min-width: 1200px) {
         gap: 30px;
@@ -49,18 +72,18 @@
 }
 
 .header__wrap {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     gap: 20px;
-
-    @media screen and (max-width: 480px) {
-            display: none;
-        }
+    padding-right: 20px;
 
     @media screen and (min-width: 1200px) {
         margin-left: auto;
-        padding-right: 20px;
         flex-wrap: nowrap;
         gap: 40px;
         align-items: center;
@@ -81,4 +104,19 @@
     &:focus {
         color: $accentColor;
     }
+}
+
+.mobile-menu-button {
+    display: none;
+    position: absolute;
+    top: 48px;
+    right: 30px;
+    display: inline-flex;
+    background-color: transparent;
+    border: none;
+}
+
+.icon-mobile-menu {
+    display: none;
+    fill: $whiteColor;
 }

@@ -80,10 +80,16 @@
     line-height: 1.67;
     letter-spacing: 0.02em;
     color: $additionalTextColor;
+    transition: color $duration $timingFunction;
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
             max-width: 330px;
         }
+}
+
+.contacts__link-address:hover {
+    color: $accentColor;
+    stroke: $accentColor;
 }
 
 .contacts__link {
@@ -92,13 +98,21 @@
     font-size: 18px;
     line-height: 1.67;
     letter-spacing: 0.02em;
+    fill: currentColor;
     color: $additionalTextColor;
+    transition: color $duration $timingFunction;
+}
+
+.contacts__link:hover {
+    color: $accentColor;
+    stroke: $accentColor;
 }
 
 .contacts__icon {
     width: 24px;
     height: 24px;
     margin-right: 16px;
+    stroke: currentColor;
 }
 
 .contacts__subtitle {

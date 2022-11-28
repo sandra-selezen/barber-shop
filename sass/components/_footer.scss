@@ -33,4 +33,10 @@
     padding-bottom: 20px;
     font-weight: 600;
     letter-spacing: 0.2em;
+    transition: color $duration $timingFunction;
+}
+
+.footer__link:hover,
+.footer__link:focus {
+    color: $accentColor;
 }

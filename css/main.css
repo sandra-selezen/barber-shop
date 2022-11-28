@@ -187,17 +187,49 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .header__container {
+    padding-top: 32px;
+  }
+}
 
-.logo {
-  margin-top: 40px;
-  margin-right: 50px;
-  margin-bottom: 40px;
+@media screen and (max-width: 767px) {
+  .logo {
+    margin-top: 40px;
+    margin-left: 15px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo {
+    margin-right: 50px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .logo {
-    margin-top: 32px;
     margin-right: 131px;
     margin-bottom: 32px;
+  }
+}
+
+.logo-icon {
+  width: 68px;
+  height: 55px;
+  fill: #FFFFFF;
+}
+@media screen and (min-width: 768px) {
+  .logo-icon {
+    fill: #303030;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navigation {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navigation {
+    padding-left: 20px;
   }
 }
 
@@ -208,11 +240,6 @@ body {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   gap: 16px;
-}
-@media screen and (max-width: 480px) {
-  .navigation__list {
-    display: none;
-  }
 }
 @media screen and (min-width: 1200px) {
   .navigation__list {
@@ -243,8 +270,9 @@ body {
       -ms-flex-pack: end;
           justify-content: flex-end;
   gap: 20px;
+  padding-right: 20px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .header__wrap {
     display: none;
   }
@@ -252,7 +280,6 @@ body {
 @media screen and (min-width: 1200px) {
   .header__wrap {
     margin-left: auto;
-    padding-right: 20px;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     gap: 40px;
@@ -280,26 +307,71 @@ body {
   color: #FF6C00;
 }
 
-.hero {
-  outline: 1px solid fuchsia;
+.mobile-menu-button {
+  display: none;
+  position: absolute;
+  top: 48px;
+  right: 30px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: transparent;
+  border: none;
 }
 
-.hero__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.icon-mobile-menu {
+  display: none;
+  fill: #FFFFFF;
 }
 
-.hero__soc {
-  width: 100px;
-  padding-bottom: 40px;
-  padding-left: 27px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+@media screen and (max-width: 767px) {
+  .hero {
+    background-color: rgba(157, 164, 189, 0.6);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url("..//../images/hero-mobile-1-1x.jpg");
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("..//../images/hero-mobile-1-1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url("..//../images/hero-mobile-1-2x.jpg");
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("..//../images/hero-mobile-1-2x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero__soc {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__soc {
+    width: 120px;
+    padding-left: 37px;
+    padding-bottom: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__soc {
+    width: 100px;
+    padding-left: 27px;
+  }
 }
 
 .hero__list {
@@ -333,19 +405,54 @@ body {
   color: #FF6C00;
 }
 
-.hero__wrap {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  padding: 272px 100px 208px 100px;
-  background-color: rgba(157, 164, 189, 0.6);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url("..//../images/hero-desktop-1-2x.jpg");
-  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("..//../images/hero-desktop-1-2x.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+@media screen and (max-width: 767px) {
+  .hero__wrap {
+    padding-top: 208px;
+    padding-bottom: 209px;
+    padding-left: 31px;
+  }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero__wrap {
+    height: 680px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    padding: 156px 90px 237px 120px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url("..//../images/hero-tablet-1-1x.jpg");
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("..//../images/hero-tablet-1-1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .hero__wrap {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url("..//../images/hero-tablet-1-2x.jpg");
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("..//../images/hero-tablet-1-2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__wrap {
+    height: 680px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    padding: 272px 100px 208px 100px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url("..//../images/hero-desktop-1-1x.jpg");
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("..//../images/hero-desktop-1-1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero__wrap {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url("..//../images/hero-desktop-1-2x.jpg");
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("..//../images/hero-desktop-1-2x.jpg");
+  }
+}
 .hero__subtitle {
   margin-bottom: 20px;
   font-weight: 600;
@@ -1032,11 +1139,18 @@ body {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9DA4BD;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts__link-address {
     max-width: 330px;
   }
+}
+
+.contacts__link-address:hover {
+  color: #FF6C00;
+  stroke: #FF6C00;
 }
 
 .contacts__link {
@@ -1049,13 +1163,22 @@ body {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
+  fill: currentColor;
   color: #9DA4BD;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts__link:hover {
+  color: #FF6C00;
+  stroke: #FF6C00;
 }
 
 .contacts__icon {
   width: 24px;
   height: 24px;
   margin-right: 16px;
+  stroke: currentColor;
 }
 
 .contacts__subtitle {
@@ -1121,4 +1244,11 @@ body {
   padding-bottom: 20px;
   font-weight: 600;
   letter-spacing: 0.2em;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__link:hover,
+.footer__link:focus {
+  color: #FF6C00;
 }/*# sourceMappingURL=main.css.map */
