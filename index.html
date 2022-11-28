@@ -348,20 +348,20 @@
         </section>
 
         <section class="section booking">
-            <div class="container">
+            <div class="container booking__container">
                 <h2 class="booking__title">Online-booking</h2>
                 
-                <form>
-                    <label for="">Name<sup>*</sup>
-                        <input type="text">
-                    </label>
-                    <label for="">Phone<sup>*</sup>
-                        <input type="tel" name="" id="">
-                    </label>
-                    <label for="">Message
-                        <textarea name="" id="" rows="5" placeholder="Type your message here..."></textarea>
-                    </label>
-                    <button type="submit">send</button>
+                <form class="booking__form form">
+                    <div class="form__field">
+                        <input class="form__input" type="text" name="name" placeholder="name*">
+                    </div>
+                    <div class="form__field">
+                        <input class="form__input" type="tel" name="phone" placeholder="phone*">
+                    </div>
+                    <div class="form__field">
+                        <textarea class="form__textarea" name="comment" rows="5" placeholder="message"></textarea>
+                    </div>
+                    <button class="form__button" type="submit">send</button>
                 </form>
             </div>
         </section>

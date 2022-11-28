@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         padding-top: 32px;
     }
 }
@@ -22,6 +22,7 @@
         margin-right: 50px;
     }
     @media screen and (min-width: 1200px) {
+        margin-top: 32px;
         margin-right: 131px;
         margin-bottom: 32px;
     }
