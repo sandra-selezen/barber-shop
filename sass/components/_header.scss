@@ -108,16 +108,24 @@
 }
 
 .mobile-menu-button {
-    display: none;
     position: absolute;
     top: 48px;
     right: 30px;
     display: inline-flex;
     background-color: transparent;
     border: none;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 
 .icon-mobile-menu {
-    display: none;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }    
+}
+
+.icon-mobile-menu--open {
     fill: $whiteColor;
 }

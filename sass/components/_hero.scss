@@ -77,9 +77,12 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .hero__wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
         height: 680px;
         flex-grow: 1;
-        padding: 156px 90px 237px 120px;
         background-image: linear-gradient($heroGradient, $heroGradient), url("..//../images/hero-tablet-1-1x.jpg");
         background-repeat: no-repeat;
         background-position: center;
@@ -121,6 +124,9 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: $subtitleColor;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        justify-content: center;
+    }
 }
 
 .hero__title {

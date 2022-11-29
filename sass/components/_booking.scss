@@ -1,10 +1,17 @@
+// .section-container {
+//     display: flex;
+// }
+
 .booking {
     background-color: $darkBgColor;
-}
-
-.booking__container {
     
 }
+
+// .booking__container {
+//     @media screen and (min-width: 1200px) {
+//         width: calc(100% / 2);
+//     }
+// }
 
 .booking__title {
     margin-bottom: 44px;
@@ -50,6 +57,10 @@
     @media screen and (min-width: 768px) {
         width: 330px;
     }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
 }
 
 .form__textarea {
@@ -65,11 +76,17 @@
     border-bottom: 1px solid $footerLineColor;
     transition: color $duration $timingFunction,
         border-color $duration $timingFunction;
+
+    @media screen and (min-width: 768px) {
+        width: 690px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 570px;
+    }
 }
 
-.form__textarea:hover,
 .form__textarea:focus,
-.form__input:hover,
 .form__input:focus {
     border-color: $whiteColor;
 }

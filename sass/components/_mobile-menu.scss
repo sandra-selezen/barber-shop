@@ -1,0 +1,108 @@
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 118px;
+    padding-right: 100px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    transform: translateX(100%);
+    transition: transform $duration $timingFunction;
+    background-color: $whiteColor;
+    overflow-y: scroll;
+}
+
+.mobile-menu.is-open {
+    transform: translateX(0);
+}
+
+.icon-mobile-menu--close {
+    fill: $primaryTextColor;
+}
+
+.mobile-menu__nav {
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.nav__link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: calc(25 / 18);
+    letter-spacing: 0.1em;
+    color: $primaryTextColor;
+    transition: color $duration $timingFunction;
+
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
+}
+
+.mobile-menu__contact {
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.mobile-menu__phone {
+    font-size: 18px;
+    line-height: calc(25 / 18);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $primaryTextColor;
+    transition: color $duration $timingFunction;
+
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
+}
+
+.mobile-menu__button {
+    color: $primaryTextColor;
+    transition: color $duration $timingFunction,
+    background-color $duration $timingFunction;
+
+    &:hover,
+    &:focus {
+        color: $whiteColor;
+        background-color: $accentColor;
+    }
+}
+
+.mobile-menu__social {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.mobile-menu__social::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+}
+
+.mobile-social__link {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(19 / 14);
+    letter-spacing: 0.2em;
+    color: $primaryTextColor;
+    transition: color $duration $timingFunction;
+
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
+}
