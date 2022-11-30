@@ -7,17 +7,16 @@
     display: flex;
     align-items: center;
 
+    @media screen and (max-width: 767px) {
+        padding-top: 40px;
+    }
+
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         padding-top: 32px;
     }
 }
 
 .logo {
-    @media screen and (max-width: 767px) {
-        margin-top: 40px;
-        margin-left: 15px;
-    }
-
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-right: 50px;
     }
@@ -107,11 +106,8 @@
     }
 }
 
-.mobile-menu-button {
-    position: absolute;
-    top: 48px;
-    right: 30px;
-    display: inline-flex;
+.open-mobile-menu {
+    margin-left: auto;
     background-color: transparent;
     border: none;
 

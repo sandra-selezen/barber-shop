@@ -187,18 +187,17 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .header__container {
+    padding-top: 40px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header__container {
     padding-top: 32px;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .logo {
-    margin-top: 40px;
-    margin-left: 15px;
-  }
-}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .logo {
     margin-right: 50px;
@@ -308,18 +307,13 @@ body {
   color: #FF6C00;
 }
 
-.mobile-menu-button {
-  position: absolute;
-  top: 48px;
-  right: 30px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.open-mobile-menu {
+  margin-left: auto;
   background-color: transparent;
   border: none;
 }
 @media screen and (min-width: 768px) {
-  .mobile-menu-button {
+  .open-mobile-menu {
     display: none;
   }
 }
@@ -335,23 +329,15 @@ body {
 }
 
 .mobile-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100vw;
   height: 100vh;
-  padding-top: 118px;
-  padding-right: 100px;
+  padding-top: 48px;
+  padding-right: 31px;
   padding-bottom: 48px;
   padding-left: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  z-index: 5;
+  position: fixed;
+  top: 0;
+  z-index: 999;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -362,9 +348,20 @@ body {
   overflow-y: scroll;
 }
 
+.mobile-menu__container {
+  margin: 0 auto;
+}
+
 .mobile-menu.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+.close-mobile-menu {
+  display: block;
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
 }
 
 .icon-mobile-menu--close {
@@ -422,6 +419,7 @@ body {
 }
 
 .mobile-menu__button {
+  width: 194px;
   color: #303030;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -432,6 +430,8 @@ body {
 }
 
 .mobile-menu__social {
+  position: relative;
+  padding-left: 100px;
   margin-top: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -445,6 +445,9 @@ body {
 
 .mobile-menu__social::before {
   content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
   width: 60px;
   height: 1px;
   background-color: currentColor;

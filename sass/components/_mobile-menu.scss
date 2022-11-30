@@ -1,24 +1,32 @@
 .mobile-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100vw;
     height: 100vh;
-    padding-top: 118px;
-    padding-right: 100px;
+    padding-top: 48px;
+    padding-right: 31px;
     padding-bottom: 48px;
     padding-left: 40px;
-    display: flex;
-    flex-direction: column;
-    z-index: 5;
+    position: fixed;
+    top: 0;
+    z-index: 999;
     transform: translateX(100%);
     transition: transform $duration $timingFunction;
     background-color: $whiteColor;
     overflow-y: scroll;
 }
 
+.mobile-menu__container {
+    margin: 0 auto;
+}
+
 .mobile-menu.is-open {
     transform: translateX(0);
+}
+
+.close-mobile-menu {
+    display: block;
+    margin-left: auto;
+    background-color: transparent;
+    border: none;
 }
 
 .icon-mobile-menu--close {
@@ -68,6 +76,7 @@
 }
 
 .mobile-menu__button {
+    width: 194px;
     color: $primaryTextColor;
     transition: color $duration $timingFunction,
     background-color $duration $timingFunction;
@@ -80,6 +89,8 @@
 }
 
 .mobile-menu__social {
+    position: relative;
+    padding-left: 100px;
     margin-top: auto;
     display: flex;
     flex-direction: column;
@@ -88,6 +99,9 @@
 
 .mobile-menu__social::before {
     content: '';
+    position: absolute;
+    left: 0;
+    top: 9px;
     width: 60px;
     height: 1px;
     background-color: currentColor;
