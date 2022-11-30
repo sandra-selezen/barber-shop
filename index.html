@@ -28,7 +28,7 @@
                 </ul>
             </nav>
             <div class="header__wrap">
-                <button class="button" type="button" id="booking">Online-booking</button>
+                <a class="button" type="button" href="#booking">Online-booking</a>
                 <a class="header__phone" href="tel:+380441111111">+38 044 111 11 11</a>
             </div>
             <button class="open-mobile-menu js-open-menu" aria-expanded="false" aria-controls="mobile-menu" type="button">
@@ -84,7 +84,7 @@
                     <p class="about__text">We are a team that never stops at what has been achieved and are thirsty for changes. And when
                         you fall into the hands of our master, you will never be the same again. We are a team that is always "on the same wave" with clients.
                         Therefore, we are always ready to improve everyone who comes to us!</p>
-                    <button class="button button--black-theme" type="button">Online-booking</button>
+                    <a class="button button--black-theme" type="button" href="#booking">Online-booking</a>
                 </div>
             </div>
         </section>
@@ -132,7 +132,9 @@
                         </li>
                     </ul>
                 </div>
-                <button class="button" type="button">Online-booking</button>
+                <div class="button-container">
+                    <a class="button" type="button" href="#booking">Online-booking</a>
+                </div>
             </div>
         </section>
 
@@ -347,61 +349,60 @@
             </div>
         </section>
 
-        <div class="section-container">
-            <section class="section booking">
-                <div class="container booking__container">
-                    <h2 class="booking__title">Online-booking</h2>
-            
-                    <form class="booking__form form">
-                        <div class="form__field">
-                            <input class="form__input" type="text" name="name" placeholder="name*">
-                        </div>
-                        <div class="form__field">
-                            <input class="form__input" type="tel" name="phone" placeholder="phone*">
-                        </div>
-                        <div class="form__field">
-                            <textarea class="form__textarea" name="comment" rows="5" placeholder="message"></textarea>
-                        </div>
-                        <button class="form__button" type="submit">send</button>
-                    </form>
-                </div>
-            </section>
-            <section class="section contacts" id="contacts">
-                <div class="container contacts__container">
-                    <div class="contacts__box">
-                        <h2 class="contacts__title">Contacts</h2>
-                        <address class="contacts__address">
-                            <ul class="contacts__list">
-                                <li class="contacts__item">
-                                    <a class="contacts__link-address" href="https://goo.gl/maps/Q2aC9YH2SGYtDk5k6"
-                                        rel="noopener noreferrer nofollow" target="_blank">
-                                        <svg class="contacts__icon">
-                                            <use href="./images/icons.svg#icon-map-pin"></use>
-                                        </svg>st. Vasylkivska, 7A Kyiv, 02000</a>
-                                </li>
-                                <li class="contacts__item">
-                                    <a class="contacts__link" href="tel:+380441111111">
-                                        <svg class="contacts__icon">
-                                            <use href="./images/icons.svg#icon-phone"></use>
-                                        </svg>+38 044 111 11 11</a>
-                                </li>
-                                <li class="contacts__item">
-                                    <a class="contacts__link" href="mailto:barbershop@email.com">
-                                        <svg class="contacts__icon">
-                                            <use href="./images/icons.svg#icon-mail"></use>
-                                        </svg>barbershop@email.com</a>
-                                </li>
-                            </ul>
-                        </address>
+        <section class="section booking" id="booking">
+            <div class="container booking__container">
+                <h2 class="booking__title">Online-booking</h2>
+        
+                <form class="booking__form form">
+                    <div class="form__field">
+                        <input class="form__input" type="text" name="name" placeholder="name*">
                     </div>
-                    <div class="contacts__wrap">
-                        <p class="contacts__subtitle">Working hours</p>
-                        <p class="contacts__text">Every day from 9:00 to 22:00</p>
+                    <div class="form__field">
+                        <input class="form__input" type="tel" name="phone" placeholder="phone*">
                     </div>
+                    <div class="form__field">
+                        <textarea class="form__textarea" name="comment" rows="5" placeholder="message"></textarea>
+                    </div>
+                    <button class="form__button" type="submit">send</button>
+                </form>
+            </div>
+        </section>
+        <section class="section contacts" id="contacts">
+            <div class="container contacts__container">
+                <div class="contacts__box">
+                    <h2 class="contacts__title">Contacts</h2>
+                    <address class="contacts__address">
+                        <ul class="contacts__list">
+                            <li class="contacts__item">
+                                <a class="contacts__link-address" href="https://goo.gl/maps/Q2aC9YH2SGYtDk5k6"
+                                    rel="noopener noreferrer nofollow" target="_blank">
+                                    <svg class="contacts__icon">
+                                        <use href="./images/icons.svg#icon-map-pin"></use>
+                                    </svg>st. Vasylkivska, 7A Kyiv, 02000</a>
+                            </li>
+                            <li class="contacts__item">
+                                <a class="contacts__link" href="tel:+380441111111">
+                                    <svg class="contacts__icon">
+                                        <use href="./images/icons.svg#icon-phone"></use>
+                                    </svg>+38 044 111 11 11</a>
+                            </li>
+                            <li class="contacts__item">
+                                <a class="contacts__link" href="mailto:barbershop@email.com">
+                                    <svg class="contacts__icon">
+                                        <use href="./images/icons.svg#icon-mail"></use>
+                                    </svg>barbershop@email.com</a>
+                            </li>
+                        </ul>
+                    </address>
                 </div>
-            </section>
-        </div>
+                <div class="contacts__wrap">
+                    <p class="contacts__subtitle">Working hours</p>
+                    <p class="contacts__text">Every day from 9:00 to 22:00</p>
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer class="footer">
         <div class="container footer__container">
             <p class="copyright">&copy; Copyright 2020</p>

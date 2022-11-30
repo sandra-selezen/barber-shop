@@ -46,9 +46,9 @@
     }
 }
 
-.services__container .button {
-    margin: 0 auto;
-    display: block;
+.button-container {
+    display: flex;
+    justify-content: center;
 }
 
 .services__subtitle {

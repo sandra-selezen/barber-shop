@@ -19,6 +19,13 @@
     display: flex;
     gap: 40px;
     align-items: center;
+
+    @media screen and (max-width: 479px) {
+        position: relative;
+        flex-direction: column;
+        padding-left: 100px;
+        gap: 24px;
+    }
 }
 
 .footer__list::before {
@@ -26,6 +33,12 @@
     width: 60px;
     height: 1px;
     background-color: currentColor;
+
+    @media screen and (max-width: 479px) {
+        position: absolute;
+        left: 0;
+        top: 9px;
+    }
 }
 
 .footer__link {

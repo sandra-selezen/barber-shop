@@ -1,5 +1,4 @@
 .contacts {
-    flex-basis: calc(50% / 2);
     background-color: $darkBgColor;
     background-image: url("..//../images/footer-mobile-1x.png");
     background-repeat: no-repeat;
@@ -42,15 +41,11 @@
 }
 
 .contacts__container {
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-
-    // @media screen and (min-width: 1200px) {
-    //     width: calc(100% / 2);
-    // }
 }
 
 .contacts__title {
@@ -88,8 +83,8 @@
     transition: color $duration $timingFunction;
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-            max-width: 330px;
-        }
+        max-width: 330px;
+    }
 }
 
 .contacts__link-address:hover {

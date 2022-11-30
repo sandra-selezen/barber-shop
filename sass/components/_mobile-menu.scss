@@ -7,6 +7,7 @@
     padding-left: 40px;
     position: fixed;
     top: 0;
+    right: 0;
     z-index: 999;
     transform: translateX(100%);
     transition: transform $duration $timingFunction;
