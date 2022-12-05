@@ -72,14 +72,6 @@
     width: calc((100% - 30px) / 2);
     text-align: center;
     background-color: $sectionBgColor;
-
-    // @media screen and (min-width: 768px) {
-    //     max-width: 210px;
-    // }
-
-    // @media screen and (min-width: 1200px) {
-    //     max-width: 170px;
-    // }
 }
 
 .benefits__item:nth-child(odd) {
