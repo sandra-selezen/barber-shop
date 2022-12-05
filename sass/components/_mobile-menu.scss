@@ -1,22 +1,25 @@
 .mobile-menu {
     width: 100vw;
     height: 100vh;
-    padding-top: 48px;
-    padding-right: 31px;
-    padding-bottom: 48px;
-    padding-left: 40px;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 999;
     transform: translateX(100%);
     transition: transform $duration $timingFunction;
-    background-color: $whiteColor;
     overflow-y: scroll;
+    background-color: $heroGradient;
 }
 
 .mobile-menu__container {
-    margin: 0 auto;
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 48px 31px 48px 40px;
+    overflow: auto;
+    background-color: $whiteColor;
 }
 
 .mobile-menu.is-open {

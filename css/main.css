@@ -332,10 +332,6 @@ body {
 .mobile-menu {
   width: 100vw;
   height: 100vh;
-  padding-top: 48px;
-  padding-right: 31px;
-  padding-bottom: 48px;
-  padding-left: 40px;
   position: fixed;
   top: 0;
   right: 0;
@@ -346,12 +342,19 @@ body {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: #FFFFFF;
   overflow-y: scroll;
+  background-color: rgba(25, 28, 38, 0.2);
 }
 
 .mobile-menu__container {
-  margin: 0 auto;
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 48px 31px 48px 40px;
+  overflow: auto;
+  background-color: #FFFFFF;
 }
 
 .mobile-menu.is-open {
@@ -553,7 +556,6 @@ body {
   .hero__wrap {
     padding-top: 208px;
     padding-bottom: 209px;
-    padding-left: 31px;
   }
 }
 
