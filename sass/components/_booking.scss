@@ -1,12 +1,8 @@
 .booking {
-    background-color: $darkBgColor;
+    @media screen and (min-width: 1200px) {
+        width: calc(50% - 15px);
+    }
 }
-
-// .booking__container {
-//     @media screen and (min-width: 1200px) {
-//         max-width: 600px;
-//     }
-// }
 
 .booking__title {
     margin-bottom: 44px;
@@ -24,14 +20,10 @@
 }
 
 .booking__form {
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-    }
-
-    @media screen and (min-width: 1200px) {
-        max-width: 800px;
     }
 }
 
@@ -58,7 +50,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-        width: 80%;
+        width: 270px;
     }
 }
 
@@ -75,13 +67,11 @@
     border-bottom: 1px solid $footerLineColor;
     transition: color $duration $timingFunction,
         border-color $duration $timingFunction;
+}
 
+.booking__textarea {
     @media screen and (min-width: 768px) {
-        width: 690px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: 80%;
+        width: 100%;
     }
 }
 

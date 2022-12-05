@@ -4,8 +4,12 @@
 }
 
 .footer__container {
-    display: flex;
-    justify-content: space-between;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .copyright {
@@ -19,12 +23,12 @@
     display: flex;
     gap: 40px;
     align-items: center;
+    justify-content: end;
+}
 
-    @media screen and (max-width: 479px) {
-        position: relative;
-        flex-direction: column;
-        padding-left: 100px;
-        gap: 24px;
+@media screen and (max-width: 767px) {
+    .footer__list {
+        margin-bottom: 20px;
     }
 }
 
