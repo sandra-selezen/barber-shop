@@ -74,47 +74,48 @@
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-    .hero__wrap {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        height: 680px;
-        flex-grow: 1;
-        background-image: linear-gradient($heroGradient, $heroGradient), url("..//../images/hero-tablet-1-1x.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
+// @media screen and (min-width: 768px) and (max-width: 1199px) {
+//     .hero__wrap {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         text-align: center;
+//         height: 680px;
+//         flex-grow: 1;
+//         background-image: linear-gradient($heroGradient, $heroGradient), url("..//../images/hero-tablet-1-1x.jpg");
+//         background-repeat: no-repeat;
+//         background-position: center;
+//         background-size: cover;
+//     }
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .hero__wrap {
-            background-image: linear-gradient($heroGradient, $heroGradient), url("..//../images/hero-tablet-1-2x.jpg");
-        }
-    }
-}
+//     @media (min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//         .hero__wrap {
+//             background-image: linear-gradient($heroGradient, $heroGradient), url("..//../images/hero-tablet-1-2x.jpg");
+//         }
+//     }
+// }
 
 @media screen and (min-width: 1200px) {
     .hero__wrap {
         height: 680px;
         flex-grow: 1;
         padding: 272px 100px 208px 100px;
-        background-image: linear-gradient($heroGradient, $heroGradient), url("..//../images/hero-desktop-1-1x.jpg");
+        background-color: $subtitleColor;
+        // background-image: linear-gradient($heroGradient, $heroGradient), url("..//../images/hero-desktop-1-1x.jpg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
     }
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .hero__wrap {
-            background-image: linear-gradient($heroGradient, $heroGradient), url("..//../images/hero-desktop-1-2x.jpg");
-        }
-    }
+    // @media (min-device-pixel-ratio: 2),
+    // (min-resolution: 192dpi),
+    // (min-resolution: 2dppx) {
+    //     .hero__wrap {
+    //         background-image: linear-gradient($heroGradient, $heroGradient), url("..//../images/hero-desktop-1-2x.jpg");
+    //     }
+    // }
 }
 
 .hero__subtitle {
