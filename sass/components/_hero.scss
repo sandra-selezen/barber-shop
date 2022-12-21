@@ -67,10 +67,8 @@
 }
 
 .hero__text {
-    @media screen and (min-width: 1200px) {
-        position: relative;
-        z-index: 10;
-    }
+    position: relative;
+    z-index: 10;
 }
 
 .hero__subtitle {
