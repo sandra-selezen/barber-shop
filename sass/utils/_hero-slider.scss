@@ -1,15 +1,30 @@
+.hero {
+    position: relative;
+}
+
 .hero-slider {
     position: absolute;
-    top: 0;
-    left: -30px;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 5;
+
+    width: 100%;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        position: relative;
+        left: 58%;
+        transform: translateX(-50%);
+        width: 570px;
+    }
     @media screen and (min-width: 1200px) {
-        left: 0;
+        left: 54.2%;
+        transform: translateX(-50%);
+        width: 1070px;
     }
 }
 
 .hero-slider__item {
-    width: 480px;
+    width: 100%;
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         width: 570px;
@@ -21,7 +36,7 @@
 }
 
 .hero-slider .slick-list {
-    width: 480px;
+    width: 100%;
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         width: 570px;
@@ -53,10 +68,10 @@
 
     @media screen and (min-width: 768px) {
         left: auto;
-        right: 80px;
+        right: 100px;
     }
     
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
         right: 100px;
     }
 }
@@ -67,6 +82,10 @@
     right: 40%;
 
     @media screen and (min-width: 768px) {
+        right: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
         right: 20px;
     }
 }

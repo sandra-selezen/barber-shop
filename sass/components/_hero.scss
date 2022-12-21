@@ -10,6 +10,8 @@
     }
 
     @media screen and (min-width: 768px) {
+        position: absolute;
+        bottom: 0;
         width: 120px;
         padding-left: 37px;
         padding-bottom: 40px;
@@ -50,7 +52,6 @@
 }
 
 .hero__wrap {
-    position: relative;
     @media screen and (max-width: 767px) {
     padding-top: 208px;
     padding-bottom: 209px;
@@ -62,13 +63,23 @@
         height: 680px;
         flex-grow: 1;
         padding: 272px 100px 208px 100px;
-        background-color: $subtitleColor;
+        // background-color: $subtitleColor;
     }
 }
 
 .hero__text {
     position: relative;
     z-index: 10;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        position: absolute;
+        top: 40%;
+        left: 35%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        left: 10%;
+    }
 }
 
 .hero__subtitle {

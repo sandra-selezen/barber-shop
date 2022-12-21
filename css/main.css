@@ -472,20 +472,38 @@ body {
   color: #FF6C00;
 }
 
+.hero {
+  position: relative;
+}
+
 .hero-slider {
   position: absolute;
-  top: 0;
-  left: -30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   z-index: 5;
+  width: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-slider {
+    position: relative;
+    left: 58%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 570px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero-slider {
-    left: 0;
+    left: 54.2%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 1070px;
   }
 }
 
 .hero-slider__item {
-  width: 480px;
+  width: 100%;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero-slider__item {
@@ -499,7 +517,7 @@ body {
 }
 
 .hero-slider .slick-list {
-  width: 480px;
+  width: 100%;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero-slider .slick-list {
@@ -534,10 +552,10 @@ body {
 @media screen and (min-width: 768px) {
   .hero-slider .slick-arrow.slick-prev {
     left: auto;
-    right: 80px;
+    right: 100px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero-slider .slick-arrow.slick-prev {
     right: 100px;
   }
@@ -549,6 +567,11 @@ body {
   right: 40%;
 }
 @media screen and (min-width: 768px) {
+  .hero-slider .slick-arrow.slick-next {
+    right: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .hero-slider .slick-arrow.slick-next {
     right: 20px;
   }
@@ -580,6 +603,8 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero__soc {
+    position: absolute;
+    bottom: 0;
     width: 120px;
     padding-left: 37px;
     padding-bottom: 40px;
@@ -629,9 +654,6 @@ body {
   color: #FF6C00;
 }
 
-.hero__wrap {
-  position: relative;
-}
 @media screen and (max-width: 767px) {
   .hero__wrap {
     padding-top: 208px;
@@ -646,12 +668,23 @@ body {
         -ms-flex-positive: 1;
             flex-grow: 1;
     padding: 272px 100px 208px 100px;
-    background-color: rgba(157, 164, 189, 0.6);
   }
 }
 .hero__text {
   position: relative;
   z-index: 10;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero__text {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__text {
+    left: 10%;
+  }
 }
 
 .hero__subtitle {
